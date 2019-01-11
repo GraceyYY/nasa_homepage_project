@@ -147,6 +147,39 @@ img:hover {
   background-color: #15418c;
 }
 
+.dropdown ul {
+  list-style: none;
+  padding: 0px;
+  min-width: 100%;
+  float:none;
+  display:list-item;
+  font-size: 16px;
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color:#15418c;
+  z-index: 2;
+}
+
+.dropdown .width_max {
+  width: 250px;
+}
+.dropdown .width_medium {
+  width:180px;
+}
+.dropdown .width_small {
+  width: 150px;
+}
+
+.dropdown:hover ul {
+  visibility: visible;
+}
+
+.dropdown li:hover{
+  background-color: #072f54;
+}
+
 .sub_nav {
   background-color: #555555;
   padding: 0px;
