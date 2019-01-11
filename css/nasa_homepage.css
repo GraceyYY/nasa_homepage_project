@@ -29,11 +29,6 @@ ul {
   color: #fcfcfc;
 }
 
-nav li {
-  padding: 0px 10px;
-  border-right: solid 1px #fcfcfc;
-}
-
 main {
   width: 100%;
 }
@@ -72,10 +67,6 @@ img {
 
 .big_font {
   font-size: 20px;
-}
-
-.thin {
-  font-weight: 300;
 }
 
 .icon {
@@ -141,8 +132,28 @@ img {
 }
 
 .sub_nav {
-  padding: 6px;
   background-color: #555555;
+  padding: 0px;
+}
+
+.sub_nav li {
+  padding: 12px;
+  position: relative;
+}
+
+.border_right::after {
+  position: absolute;
+  content: '';
+  height: 50%;
+  background-color: #ffffff;
+  top: 25%;
+  left: 100%;
+  width: 1px;
+}
+
+.sub_nav li:hover {
+  background-color: #888888;
+  cursor: pointer;
 }
 
 .search_bar {
@@ -197,7 +208,7 @@ img {
   color: #fcfcfc;
 }
 
-.events a:link, a:visited {
+a:link, a:visited {
   color: #ffffff;
   text-decoration: none;
 }
